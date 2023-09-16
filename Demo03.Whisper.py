@@ -7,7 +7,7 @@ model = WhisperModel(
     download_root="./Models",
 )
 
-segments, info = model.transcribe("audio.mp3")
+segments, info = model.transcribe("output.wav")
 
 print(f"Language: {info.language}")
 print(f"Lang Prob: {info.language_probability}")
